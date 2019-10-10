@@ -1,0 +1,26 @@
+language : node_js
+node_js:
+  - node_js
+
+dist: bionic
+sudo: required
+
+branches:
+  only:
+  - routing
+
+before_script:
+  -npm install -g @angular/cli
+
+script:
+  - ng lint
+  - npm run test-headless
+  - ngbuild --prod --base-href https://dawnlumsy.github.io/weather-app/
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: dist/weather-app
+  on: 
+    branch: routing
