@@ -18,16 +18,16 @@ export class WeatherService {
     {city: 'Singapore', 
       imageUrl: `https://www.nea.gov.sg/assets/images/map/base-853.png`},
     {city: 'Kuala Lumpur', 
-      imageUrl: `https://www.researchgate.net/profile/Wee_Boon_Siong/publication/283298104/
-        figure/fig1/AS:614058734673920@1523414419040/Location-of-
-        sampling-site-at-the-Klang-Valley-Source.png`},
+      imageUrl: `https://www.researchgate.net/profile/Wee_Boon_Siong/publication/
+      283298104/figure/fig1/AS:614058734673920@1523414419040/Location-of-
+      sampling-site-at-the-Klang-Valley-Source.png`},
     {city: 'Beijing', 
         imageUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/
         Beijing_in_China_%28%2Ball_claims_hatched%29.svg/1200px-Beijing_in_
         China_%28%2Ball_claims_hatched%29.svg.png`},
     {city: 'New Delhi', 
       imageUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/
-        Location_map_India_Delhi_EN.svg/1200px-Location_map_India_Delhi_EN.svg.png`}
+      Location_map_India_Delhi_EN.svg/1200px-Location_map_India_Delhi_EN.svg.png`}
   ];
 
   constructor(private httpSvc: HttpClient) { }
