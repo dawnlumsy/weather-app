@@ -1,13 +1,13 @@
 language: node_js
 node_js:
-  - node
+  - node_js
 
 dist: bionic
 sudo: required
 
 branches:
   only:
-   - routing
+  	- routing
 
 before_script:
   - npm install -g @angular/cli
