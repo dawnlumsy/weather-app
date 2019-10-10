@@ -9,6 +9,13 @@ branches:
   only:
    - master
 
+notifications:
+  email:
+    recipients:
+      - dawnlum26@yahoo.com.sg
+    on_success: always # default: change
+    on_failure: always # default: always
+
 before_script:
   - npm install -g @angular/cli
 
